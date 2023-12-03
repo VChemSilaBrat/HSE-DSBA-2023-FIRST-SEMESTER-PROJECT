@@ -28,7 +28,7 @@ def plots():
         end_year = int(end.split(".")[1])
         gdf = df[(df["all_month"] >= start_month + start_year*12) & (df["all_month"] <= end_year * 12 + end_month)]
         # print(gdf)
-        # print(start_month, start_year, end_month, end_year, sep = '/n')
+        # print(start_month, start_year, end_month, end_year, sep = '\n')
         fig = px.line(
             gdf,
             x='datum',
