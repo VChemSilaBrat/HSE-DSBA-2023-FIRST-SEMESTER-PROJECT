@@ -4,35 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plots of projects</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./static/styles/style.css">
   </head>
   <body>
     <header>
       <h1>Plots information</h1>
       <nav>
-          <li><a href="about" target="_blank">Link to about page</a></li>
+          <a href="about" target="_blank">Link to about page</a>
       </nav>
     </header>
 
     {% if plot %}
-    <div>
+    <div class="plot">
         {{ plot | safe }}
     </div>
     {% endif %}
 
     <form action="/plots" method="post">
-        <h2>POST thing</h2>
+        <h2>POST request</h2>
         <fieldset>
           <legend>Select in what period of time you want to know median</legend>
           <ul>
-            <li>
               <label for="start">Start time:</label>
               <input type="text" name="start" placeholder="month.year (01.2015)" id="start" required>
-            </li>
-            <li>
+              <p></p>
               <label for="end">End time:</label>
               <input type="text" name="end" placeholder="month.year (01.2015)" id="end" required>
-            </li>
           </ul>
           <button type="submit">Confirm</button>
         </fieldset>
