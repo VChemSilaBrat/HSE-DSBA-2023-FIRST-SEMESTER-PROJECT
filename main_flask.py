@@ -1,5 +1,5 @@
 # venv\scripts\activate
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for
 import plotly.express as px
 import pandas as pd
 
@@ -12,6 +12,10 @@ df["all_month"] = df["Year"] * 12  + df['Month']
 @app.route('/about')
 def home():
     return render_template("About.html")
+
+@app.route('/')
+def home_fix():
+    return redirect(url_for('home'))
 
 @app.route('/plots', methods=['GET', 'POST'])
 def plots():
@@ -40,4 +44,4 @@ def plots():
         return 'ВСЕ СЛОМАЛОСЬ, БЕГИТЕ!'
 
 if __name__ == '__main__':
-    app.run(port=8000, debug=True)
+    app.run(port=8000, debug=False, )
