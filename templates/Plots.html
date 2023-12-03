@@ -10,28 +10,35 @@
     <header>
       <h1>Plots information</h1>
       <nav>
-          <li><a href="about">Link to about page</a></li>
+          <li><a href="about" target="_blank">Link to about page</a></li>
       </nav>
     </header>
-    <form action="#" method="post" target="_blank">
+
+    {% if plot %}
+    <div>
+        {{ plot | safe }}
+    </div>
+    {% endif %}
+
+    <form action="/plots" method="post">
         <h2>POST thing</h2>
         <fieldset>
           <legend>Select in what period of time you want to know median</legend>
           <ul>
             <li>
               <label for="start">Start time:</label>
-              <input type="number" name="start" placeholder="month.year (01.2015)" id="start" required>
+              <input type="text" name="start" placeholder="month.year (01.2015)" id="start" required>
             </li>
             <li>
               <label for="end">End time:</label>
-              <input type="number" name="end" placeholder="month.year (01.2015)" id="end">
+              <input type="text" name="end" placeholder="month.year (01.2015)" id="end" required>
             </li>
           </ul>
+          <button type="submit">Confirm</button>
         </fieldset>
       </form>
     <footer>
       <p>Sardak Pavel, 2023, GPL3.</p>
     </footer>
-    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
   </body>
 </html>
