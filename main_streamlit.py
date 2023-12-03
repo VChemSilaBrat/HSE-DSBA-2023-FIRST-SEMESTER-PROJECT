@@ -19,7 +19,7 @@ if __name__ == "__main__":
         st.write("Project info")
         st.link_button("Data link", "https://www.kaggle.com/datasets/milanzdravkovic/pharma-sales-data/data?select=salesmonthly.csv")
         st.image("memes.jpg")
-        st.write("Author: Sardak Pavel, 232-1.")
+        st.write("Sardak Pavel, 2023, GPL3.")
     st.header("Drugs sales dataset")
     st.subheader("Parsed data")
     st.dataframe(df, use_container_width=True)
