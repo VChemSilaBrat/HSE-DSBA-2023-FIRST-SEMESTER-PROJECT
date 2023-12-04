@@ -5,12 +5,12 @@ form {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center the form content */
+  text-align: center;
 }
 
 h2 {
   font-size: 1.5em;
-  margin-bottom: 20px; /* Add margin to space it out from other elements */
+  margin-bottom: 20px;
 }
 body {
     font-family: Arial, sans-serif;
@@ -49,7 +49,7 @@ body {
   }
 
   .plot {
-    max-width: 1000px; /* Максимальная ширина основного контейнера */
+    max-width: 1000px;
     margin: 0 auto;
   }
   
@@ -64,20 +64,19 @@ body {
     padding: 10px 0;
   }
   main {
-    max-width: 1000px; /* Максимальная ширина основного контейнера */
-    margin: 0 auto;    /* Автоматический отступ по бокам для центрирования */
+    max-width: 1000px;
+    margin: 0 auto;
   }
   
-  /* Добавление отступов к header и footer */
   header,
   footer {
-    max-width: 1000px;   /* Максимальная ширина */
-    margin-left: auto;   /* Автоматический отступ слева */
-    margin-right: auto;  /* Автоматический отступ справа */
-    padding-top: 10px;   /* Верхний внутренний отступ */
-    padding-bottom: 10px;/* Нижний внутренний отступ */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   body {
-    transform: scale(1.5); /* Пример значения для увеличения масштаба на 20% */
-    transform-origin: top; /* Определение точки, относительно которой применяется масштабирование */
+    transform: scale(1.5);
+    transform-origin: top;
   }
