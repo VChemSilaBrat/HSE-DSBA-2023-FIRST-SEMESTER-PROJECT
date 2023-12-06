@@ -1,7 +1,7 @@
 # python -m venv venv
 # cd C:\Users\psard\projects\HSE-DSBA-2023-FIRST-SEMESTER-PROJECT
 # venv\scripts\activate
-# pip install all impots
+# pip install -r requirements.txt
 # streamlit run main_streamlit.py
 import pandas as pd
 import streamlit as st
