@@ -11,7 +11,7 @@ df["all_month"] = df["Year"] * 12  + df['Month']
 
 @app.route('/about')
 def home():
-    return render_template("About.html")
+    return render_template("about.html")
 
 @app.route('/')
 def home_fix():
