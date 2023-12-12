@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plots of projects</title>
+    <title class="noselect">Plots of projects</title>
     <link rel="stylesheet" href="./static/styles/style.css">
   </head>
   <body>
-    <header>
+    <header class="noselect">
       <h1>Plots information</h1>
       <nav>
           <a href="about" target="_blank">Link to about page</a>
@@ -21,8 +21,8 @@
     {% endif %}
 
     <form action="/plots" method="post">
-        <h2>POST request</h2>
-        <fieldset>
+        <h2 class="noselect">POST request</h2>
+        <fieldset class="noselect">
           <legend>Select in what period of time you want to see month graph</legend>
           <ul>
               <label for="start">Start time:</label>
@@ -34,7 +34,7 @@
           <button type="submit">Confirm</button>
         </fieldset>
       </form>
-    <footer>
+    <footer class="noselect">
       <p class="noselect">Sardak Pavel, 2023, GPL3.</p>
     </footer>
   </body>
