@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "jupyter",
+			"path": "../jupyter"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../all-yandex-contests"
+		}
+	],
+	"settings": {}
+}
